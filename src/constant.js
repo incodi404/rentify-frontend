@@ -1,0 +1,1 @@
+export const SERVER_LINK = "https://rentify-backend-o49l.onrender.com/api/v1"
