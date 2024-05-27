@@ -20,14 +20,17 @@ function Signin() {
   const [response, setResponse] = React.useState("");
   const [error, setError] = React.useState("");
   const [alertDialouge, setAlertDialouge] = React.useState(false);
+  const [loading, setLoading] = React.useState(false)
 
   const signin = async (data) => {
     //console.log(data);
     try {
+      setLoading(true)
       const res = await axios.post(
         `${SERVER_LINK}/user/email-verification`,
         data
       );
+      setLoading(false)
       if (res.status === 200) {
         console.log(res.data.message)
         setResponse(res.data.message)
@@ -39,6 +42,10 @@ function Signin() {
       setAlertDialouge(true)
     }
   };
+
+  if(loading) {
+    return <div>loading...</div>
+  }
 
   return (
     <>
