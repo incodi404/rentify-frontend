@@ -80,6 +80,7 @@ function Signin() {
                   value: /^[A-Za-z]+$/,
                   message: "Should not contain any special character or number",
                 },
+                required: true
               })}
             />
             {errors?.firstName && (
@@ -95,6 +96,7 @@ function Signin() {
                   value: /^[A-Za-z]+$/,
                   message: "Should not contain any special character or number",
                 },
+                required: true
               })}
             />
             {errors?.lastName && (
@@ -110,6 +112,7 @@ function Signin() {
                   value: /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/,
                   message: "Invalid email",
                 },
+                required: true
               })}
             />
             {errors?.email && (
@@ -136,6 +139,7 @@ function Signin() {
                   message:
                     "Password must have minimum 1 capital letter, 1 number, 1 special character. Password length should be minimum 8.",
                 },
+                required: true
               })}
             />
             {errors?.password && (
@@ -154,7 +158,8 @@ function Signin() {
               minLength: {
                 value: 10,
                 message: "Invalid phone number"
-              }
+              },
+              required: true
             })} 
             />
             {errors?.phone && (
