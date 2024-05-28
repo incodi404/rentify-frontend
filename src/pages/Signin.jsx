@@ -37,7 +37,7 @@ function Signin() {
         setAlertDialouge(true)
       }
     } catch (error) {
-      //console.log(error?.response?.data?.message);
+      console.log(error?.response?.data?.message);
       setError(error?.response?.data?.message)
       setAlertDialouge(true)
     }
