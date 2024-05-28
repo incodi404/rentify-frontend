@@ -1,6 +1,4 @@
 import { useEffect, useState } from "react";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
 import { useDispatch, useSelector } from "react-redux";
 import { SERVER_LINK } from "./constant";
 import axios from "axios";
@@ -22,13 +20,13 @@ function App() {
   const [loading, setLoading] = useState(true);
   const dispatch = useDispatch();
 
-  const authStatus = useSelector((state) => state.auth.status)
+  const authStatus = useSelector((state) => state.auth.status);
 
   useEffect(() => {
     axios({
       url: `${SERVER_LINK}/user/get-user`,
       method: "get",
-      withCredentials: true
+      withCredentials: true,
     })
       .then((userData) => {
         //console.log(userData);
@@ -51,16 +49,26 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Layout/>}>
-          {(authStatus === true)? <Route path="" element={<Dashboard/>}/> : <Route path="" element={<Landing/>}/>}
-          <Route path="signin" element={<Signin/>} />
-          <Route path="login" element={<Login/>} />
-          <Route path="logout" element={<Logout/>} />
-          <Route path="email-verification/:verificationToken" element={<VerifyEmail/>} />
-          <Route path="delete-account/:userId" element={<VerifyAndDeleteAccount/>} />
-          <Route path="post-create" element={<PostCreate/>} />
-          <Route path="update/:postId" element={<UpdatePage/>} />
-          <Route path="my-profile" element={<MyProfile/>} />
+        <Route path="/" element={<Layout />}>
+          {authStatus === true ? (
+            <Route path="" element={<Dashboard />} />
+          ) : (
+            <Route path="" element={<Landing />} />
+          )}
+          <Route path="signin" element={<Signin />} />
+          <Route path="login" element={<Login />} />
+          <Route path="logout" element={<Logout />} />
+          <Route
+            path="email-verification/:verificationToken"
+            element={<VerifyEmail />}
+          />
+          <Route
+            path="delete-account/:userId"
+            element={<VerifyAndDeleteAccount />}
+          />
+          <Route path="post-create" element={<PostCreate />} />
+          <Route path="update/:postId" element={<UpdatePage />} />
+          <Route path="my-profile" element={<MyProfile />} />
         </Route>
       </Routes>
     </BrowserRouter>
