@@ -38,7 +38,7 @@ function Signin() {
       }
     } catch (error) {
       //console.log(error?.response?.data?.message);
-      setResponse(error?.response?.data?.message)
+      setError(error?.response?.data?.message)
       setAlertDialouge(true)
     }
   };
@@ -47,7 +47,7 @@ function Signin() {
     return <div>loading...</div>
   }
 
-  //console.log(error);
+  console.log(error);
 
   return (
     <>
@@ -59,11 +59,11 @@ function Signin() {
           description={response}
         />
       )}
-      {response && (
+      {error && (
         <AlertBox
           open={alertDialouge}
           setAlertDialouge={setAlertDialouge}
-          title={response || "Something went wrong"}
+          title={error || "Something Is Wrong"}
         />
       )}
       <CardComponent
