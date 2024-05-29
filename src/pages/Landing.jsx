@@ -19,38 +19,6 @@ import {
 } from "@/components/ui/carousel";
 
 function Landing() {
-  const indianCities = [
-    "Mumbai",
-    "Delhi",
-    "Bangalore",
-    "Hyderabad",
-    "Chennai",
-    "Kolkata",
-    "Pune",
-    "Jaipur",
-    "Ahmedabad",
-    "Lucknow",
-    "Surat",
-    "Kanpur",
-    "Nagpur",
-    "Visakhapatnam",
-    "Indore",
-    "Thane",
-    "Bhopal",
-    "Patna",
-    "Vadodara",
-    "Ghaziabad",
-    "Ludhiana",
-    "Agra",
-    "Nashik",
-    "Faridabad",
-    "Meerut",
-    "Rajkot",
-    "Varanasi",
-    "Srinagar",
-    "Aurangabad",
-    "Dhanbad",
-  ];
 
   return (
     <div className="w-[90vw]">
