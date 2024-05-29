@@ -56,7 +56,7 @@ function Landing() {
     <div className="w-[90vw]">
       <div className="w-full flex justify-around items-center flex-col xl:flex-row mt-[5rem]">
         <div>
-          <h1 className="text-[6vh] font-bold">When Rent Meets Simplicity</h1>
+          <h1 className="text-[6vh] font-bold">Where Rent Meets Simplicity</h1>
           <p className="text-gray-500 mt-5 w-[20rem] sm:w-[40rem]">
             Welcome to <span className="text-pink-600 font-bold">Rentify</span>,
             your ultimate destination for seamless home rentals. Whether you're
