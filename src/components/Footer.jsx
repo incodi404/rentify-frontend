@@ -14,7 +14,7 @@ function Footer() {
   }
 
   return (
-    <footer className="rounded-lg shadow m-4 w-full mb-auto bg-black">
+    <footer className="rounded-lg shadow m-4 w-full mb-auto">
       <div class="w-full px-[5rem] mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
@@ -47,9 +47,10 @@ function Footer() {
           </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+        <p className="text-center mb-4 text-[15px] text-gray-400">Designed, Developed & Deployed by <span className="text-white font-bold">Dipankar Chowdhury</span></p>
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024{" "}
-          <a href="https://flowbite.com/" class="hover:underline">
+          <a href="https://rentify-beige.vercel.app/" class="hover:underline">
             Rentify
           </a>
           . All Rights Reserved.
