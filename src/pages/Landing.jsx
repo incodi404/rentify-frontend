@@ -74,7 +74,7 @@ function Landing() {
         </div>
         <img
           src={img_1}
-          className="h-[70vh] w-[20rem] sm:w-[50rem] rounded-full"
+          className="h-[40vh] sm:h-[70vh] w-[20rem] sm:w-[50rem] rounded-full"
           alt=""
         />
       </div>
