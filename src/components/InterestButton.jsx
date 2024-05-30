@@ -29,11 +29,13 @@ function InterestButton({ postId }) {
     } catch (error) {
       //console.log(error);
       setRes(error?.response?.data?.message || "Something is wrong");
-      setAlertDialouge(true);
+      //setAlertDialouge(true);
     } finally {
       setLoading(false);
     }
   }
+
+  console.log(res);
 
   if (loading) {
     return <div>Loading...</div>;
