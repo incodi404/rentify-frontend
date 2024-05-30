@@ -35,7 +35,7 @@ function InterestButton({ postId }) {
     }
   }
 
-  console.log(res);
+  console.log(postId);
 
   if (loading) {
     return <div>Loading...</div>;
