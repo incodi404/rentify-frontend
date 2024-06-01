@@ -186,7 +186,7 @@ function Dashboard() {
           Find
         </Button>
       </form>
-      {data.map((post, index) => (
+      {data.reverse().map((post, index) => (
         <PostCard
           key={index}
           title={
