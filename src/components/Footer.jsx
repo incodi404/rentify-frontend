@@ -47,7 +47,7 @@ function Footer() {
           </ul>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <p className="text-center mb-4 text-[15px] text-gray-400">Designed, Developed & Deployed by <span className="text-white font-bold">Dipankar Chowdhury</span></p>
+        <p className="text-center mb-4 text-[15px] text-gray-400">Designed, Developed & Deployed by <a href="https://www.linkedin.com/in/dipankar-chowdhury/" target="_blank" className="text-white font-bold">Dipankar Chowdhury</a></p>
         <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">
           © 2024{" "}
           <a href="https://rentify-beige.vercel.app/" class="hover:underline">
