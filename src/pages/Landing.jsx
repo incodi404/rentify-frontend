@@ -8,7 +8,7 @@ import img_4 from "../assets/img-4.jpg";
 import img_5 from "../assets/img-5.jpg";
 import img_6 from "../assets/img-6.jpg";
 import img_7 from "../assets/img-7.jpg";
-import logo from "../assets/Colfessions.png";
+import logo from "../assets/Rentify.png";
 import email_svg from "../assets/email.svg";
 import {
   Carousel,
