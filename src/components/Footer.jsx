@@ -14,7 +14,7 @@ function Footer() {
   }
 
   return (
-    <footer className="rounded-lg shadow m-4 w-full mb-auto">
+    <footer className="rounded-lg shadow m-4 w-full relative bottom-[-180px] mb-auto">
       <div class="w-full mx-auto p-4 md:py-8">
         <div class="sm:flex sm:items-center sm:justify-between">
           <a class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
